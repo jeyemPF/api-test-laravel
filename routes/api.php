@@ -20,10 +20,8 @@ Route::middleware('auth:sanctum')->get('/user', function (Request $request) {
 
 });
 
-Route::get('/bola', function () {
-    return 'Napakapogi mo Jireh Beleni';
+// GET Method
+Route::get('/users', function (){
+    return "This is /users";
 });
-
-Route::get('/hello', [UserController::class, 'store']);
-
 

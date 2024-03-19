@@ -33,7 +33,7 @@ Route::any('/updateUserInfo', function () {
 
 Route::get('/users', function (Request $request) {
     return $request->email;
-});
+}); 
 
 
 

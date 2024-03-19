@@ -30,8 +30,12 @@ class RouteServiceProvider extends ServiceProvider
 
         $this->routes(function () {
             Route::middleware('api')
-                ->prefix('jetro')
-                ->group(base_path('routes/jetro.php'));
+                ->prefix('api')
+                ->group(base_path('routes/api.php'));
+          
+                Route::middleware('api')
+                ->prefix('api/v2')
+                ->group(base_path('routes/v2/api.php'));
           
 
             Route::middleware('web')
